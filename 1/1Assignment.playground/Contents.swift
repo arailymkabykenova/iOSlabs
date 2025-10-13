@@ -54,23 +54,23 @@ attractingFuture()
 
 
 
-//func printLifeStory(
-//    name:String,
-//    surname:String,
-//    myAge:Int,
-//    year:Int,
-//    university:String,
-//    favHobby:String?,
-//    hobbyAndCreativity:[String:Bool],
-//    numOfHobbies:Int?,
-//    favNum:Int
-//){
-//    let myFavHobby=findFavHobby(favHobby: favHobby,favHobbyIsCreative: hobbyAndCreativity)
-//    let hobbyNum=findHobbiesNumber(favHobbies:numOfHobbies)
-//    print("My name is \(name) \(surname). I am \(myAge) years old.I am the \(year) year of study at \(university).My favourite hobby is \(myFavHobby),and I have \(hobbyNum) hobbies in total.Also my lucky number is \(favNum).")
-//}
+func printLifeStory(
+    name:String,
+    surname:String,
+    myAge:Int,
+    year:Int,
+    university:String,
+    favHobby:String?,
+    hobbyAndCreativity:[String:Bool],
+    numOfHobbies:Int?,
+    favNum:Int
+){
+    let myFavHobby=findFavHobby(favHobby: favHobby,favHobbyIsCreative: hobbyAndCreativity)
+    let hobbyNum=findHobbiesNumber(favHobbies:numOfHobbies)
+    print("My name is \(name) \(surname). I am \(myAge) years old.I am the \(year) year of study at \(university).My favourite hobby is \(myFavHobby),and I have \(hobbyNum) hobbies in total.Also my lucky number is \(favNum).")
+}
 
-//printLifeStory(name:firstName,surname:lastName,myAge:age,year:yearOfStudy,university:myUniversity,favHobby: favHobby,hobbyAndCreativity: favHobbyIsCreative,numOfHobbies:numberOfFavHobbies,favNum:favNumber)
+printLifeStory(name:firstName,surname:lastName,myAge:age,year:yearOfStudy,university:myUniversity,favHobby: favHobby,hobbyAndCreativity: favHobbyIsCreative,numOfHobbies:numberOfFavHobbies,favNum:favNumber)
 
 
 /*
