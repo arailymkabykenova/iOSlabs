@@ -17,65 +17,79 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-c9-TLx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-c9-TLx">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="tintColor" name="AccentColor"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today your flower is " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4w-EI-fhI">
-                                <rect key="frame" x="49.333333333333343" y="146" width="294.33333333333326" height="40.666666666666657"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <color key="textColor" red="0.038570853760730335" green="0.13186614046391754" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drm-qh-HNt">
-                                <rect key="frame" x="161.66666666666666" y="733" width="70" height="35"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kll-dG-SzL">
+                                <rect key="frame" x="22.666666666666657" y="754" width="348" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="5rM-PB-e4X"/>
+                                    <constraint firstAttribute="width" constant="348" id="Aqg-sT-nBs"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="select">
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="0.33053034589784286" green="0.38436291881443296" blue="0.15714594622696557" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GENERATE">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleSubhead"/>
+                                    <color key="baseBackgroundColor" red="0.41918986079999998" green="0.45451433629999999" blue="0.37272699390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="selectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6O-WO-ywT"/>
+                                    <action selector="selectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bc4-JY-PAi"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chrysanthemum" translatesAutoresizingMaskIntoConstraints="NO" id="hIb-NK-PNf">
-                                <rect key="frame" x="102.66666666666669" y="311" width="188" height="230"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="230" id="IeR-ef-hUd"/>
-                                    <constraint firstAttribute="width" constant="188" id="ZAG-7g-LQp"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="today YOUR flower IS" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ji-IQ-rDL">
+                                <rect key="frame" x="51.666666666666657" y="142" width="289.66666666666674" height="40.333333333333343"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="31"/>
+                                <color key="textColor" red="0.41918986079999998" green="0.45451433629999999" blue="0.37272699390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7O1-S7-9Kd">
+                                <rect key="frame" x="76.666666666666686" y="343" width="240" height="166.33333333333337"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carnation" translatesAutoresizingMaskIntoConstraints="NO" id="bB7-bN-ksh">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="OnG-PV-TwN"/>
+                                            <constraint firstAttribute="width" constant="240" id="TQt-67-hD7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="carnation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0is-tf-ijl">
+                                        <rect key="frame" x="83.666666666666657" y="144" width="72.666666666666657" height="22.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                        <color key="textColor" red="0.41918986079999998" green="0.45451433629999999" blue="0.37272699390000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="drm-qh-HNt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2a9-hU-kwr"/>
+                            <constraint firstItem="7O1-S7-9Kd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2j2-9G-XaP"/>
                             <constraint firstItem="rB2-c9-TLx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7kC-EI-CMv"/>
-                            <constraint firstItem="u4w-EI-fhI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GC9-Fi-aFL"/>
-                            <constraint firstItem="hIb-NK-PNf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jc7-pK-EUs"/>
                             <constraint firstAttribute="bottom" secondItem="rB2-c9-TLx" secondAttribute="bottom" id="K44-9L-wLL"/>
+                            <constraint firstItem="6ji-IQ-rDL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kti-us-li2"/>
                             <constraint firstItem="rB2-c9-TLx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SFu-fS-v1t"/>
+                            <constraint firstItem="6ji-IQ-rDL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="SZi-Tw-szW"/>
                             <constraint firstAttribute="trailing" secondItem="rB2-c9-TLx" secondAttribute="trailing" id="Uc8-H6-RPK"/>
-                            <constraint firstItem="hIb-NK-PNf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aJm-eJ-AIi"/>
-                            <constraint firstItem="u4w-EI-fhI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="ag8-v5-R6V"/>
-                            <constraint firstItem="u4w-EI-fhI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xHk-bB-VZW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="drm-qh-HNt" secondAttribute="bottom" constant="16" id="yPh-ya-u4z"/>
+                            <constraint firstItem="Kll-dG-SzL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aUT-dP-qaQ"/>
+                            <constraint firstAttribute="bottom" secondItem="Kll-dG-SzL" secondAttribute="bottom" constant="34" id="k5e-WT-LVA"/>
+                            <constraint firstItem="7O1-S7-9Kd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mgh-PY-FWU"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="flowerImage" destination="hIb-NK-PNf" id="rkW-A8-iLO"/>
-                        <outlet property="titleLabel" destination="u4w-EI-fhI" id="pjw-Pv-BWF"/>
+                        <outlet property="flowerDiscription" destination="0is-tf-ijl" id="ArM-ct-cyC"/>
+                        <outlet property="flowerImage" destination="bB7-bN-ksh" id="hp8-Cp-pBl"/>
+                        <outlet property="titleLabel" destination="6ji-IQ-rDL" id="3x3-27-QpN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139.43661971830986" y="2.2900763358778624"/>
+            <point key="canvasLocation" x="138.1679389312977" y="2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
         <image name="back" width="1080" height="675"/>
-        <image name="chrysanthemum" width="450" height="450"/>
+        <image name="carnation" width="980" height="980"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
