@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-c9-TLx">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="tintColor" name="AccentColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today your flower is " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4w-EI-fhI">
+                                <rect key="frame" x="49.333333333333343" y="146" width="294.33333333333326" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" red="0.038570853760730335" green="0.13186614046391754" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drm-qh-HNt">
+                                <rect key="frame" x="161.66666666666666" y="733" width="70" height="35"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="select">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.33053034589784286" green="0.38436291881443296" blue="0.15714594622696557" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6O-WO-ywT"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chrysanthemum" translatesAutoresizingMaskIntoConstraints="NO" id="hIb-NK-PNf">
+                                <rect key="frame" x="102.66666666666669" y="311" width="188" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="IeR-ef-hUd"/>
+                                    <constraint firstAttribute="width" constant="188" id="ZAG-7g-LQp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="drm-qh-HNt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2a9-hU-kwr"/>
+                            <constraint firstItem="rB2-c9-TLx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7kC-EI-CMv"/>
+                            <constraint firstItem="u4w-EI-fhI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GC9-Fi-aFL"/>
+                            <constraint firstItem="hIb-NK-PNf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jc7-pK-EUs"/>
+                            <constraint firstAttribute="bottom" secondItem="rB2-c9-TLx" secondAttribute="bottom" id="K44-9L-wLL"/>
+                            <constraint firstItem="rB2-c9-TLx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SFu-fS-v1t"/>
+                            <constraint firstAttribute="trailing" secondItem="rB2-c9-TLx" secondAttribute="trailing" id="Uc8-H6-RPK"/>
+                            <constraint firstItem="hIb-NK-PNf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aJm-eJ-AIi"/>
+                            <constraint firstItem="u4w-EI-fhI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="ag8-v5-R6V"/>
+                            <constraint firstItem="u4w-EI-fhI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xHk-bB-VZW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="drm-qh-HNt" secondAttribute="bottom" constant="16" id="yPh-ya-u4z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="flowerImage" destination="hIb-NK-PNf" id="rkW-A8-iLO"/>
+                        <outlet property="titleLabel" destination="u4w-EI-fhI" id="pjw-Pv-BWF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.43661971830986" y="2.2900763358778624"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="1080" height="675"/>
+        <image name="chrysanthemum" width="450" height="450"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
