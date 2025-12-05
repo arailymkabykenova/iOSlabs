@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var powerStatsView: UIView!
     @IBOutlet weak var imageViewBorder: UIView!
     @IBAction func rollButton(_ sender: UIButton) {
-        heroS
+        service.fetchData()
     }
 
     var service=HeroNetworkManager()
