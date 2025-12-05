@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
     
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
 
 extension ViewController:HeroNetworkManagerDelegate{
     func update(_ newHero: HeroModel) {
+        heroImage.kf.setImage(with: URL(string:newHero.image))
         nameLabel.text=newHero.name
         birthLocationLabel.text=newHero.placeOfBirth
         firstAppearanceLabel.text=newHero.firstAppearance

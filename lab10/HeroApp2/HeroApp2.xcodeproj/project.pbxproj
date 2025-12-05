@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		41C6D7072EE3247700E864D5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 41C6D7062EE3247700E864D5 /* Kingfisher */; };
 		41C6D70A2EE324B300E864D5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 41C6D7092EE324B300E864D5 /* Alamofire */; };
-		41C6D70C2EE324B300E864D5 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 41C6D70B2EE324B300E864D5 /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				41C6D7072EE3247700E864D5 /* Kingfisher in Frameworks */,
-				41C6D70C2EE324B300E864D5 /* AlamofireDynamic in Frameworks */,
 				41C6D70A2EE324B300E864D5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +87,6 @@
 			packageProductDependencies = (
 				41C6D7062EE3247700E864D5 /* Kingfisher */,
 				41C6D7092EE324B300E864D5 /* Alamofire */,
-				41C6D70B2EE324B300E864D5 /* AlamofireDynamic */,
 			);
 			productName = HeroApp2;
 			productReference = 41C6D6D52EE31EE400E864D5 /* HeroApp2.app */;
@@ -379,11 +376,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 41C6D7082EE324B300E864D5 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		41C6D70B2EE324B300E864D5 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 41C6D7082EE324B300E864D5 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
