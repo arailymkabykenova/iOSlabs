@@ -5,7 +5,7 @@
 //  Created by Арайлым Кабыкенова on 05.12.2025.
 //
 
-struct HeroModel{
+struct HeroModel:Codable{
     let name:String
     let intelligence:Int
     let speed:Int

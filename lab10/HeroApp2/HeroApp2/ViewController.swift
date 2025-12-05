@@ -7,7 +7,9 @@
 
 import UIKit
 import Kingfisher
-
+protocol UIViewExtension{
+    func updateUI(_ object:UIView)
+}
 class ViewController: UIViewController {
     
     @IBOutlet weak var heroImage: UIImageView!
@@ -24,14 +26,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var lastView: UIView!
     @IBOutlet weak var powerStatsView: UIView!
     @IBOutlet weak var imageViewBorder: UIView!
+    
+    
+    @IBOutlet weak var rollButton: UIButton!
     @IBAction func rollButton(_ sender: UIButton) {
         service.fetchData()
+        
     }
 
     var service=HeroNetworkManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         service.delegate=self
+        changeUI()
+        setFirstHero()
+    }
+    func changeUI(){
+        updateUI(imageViewBorder )
+        imageViewBorder.backgroundColor = .black
+        updateUI(heroImage )
+        updateUI(powerStatsView )
+        updateUI(lastView )
+        updateUI(rollButton)
+        
         
     }
 
@@ -51,6 +68,27 @@ extension ViewController:HeroNetworkManagerDelegate{
         speedLabel.text="\(newHero.speed)"
         combatLabel.text="\(newHero.combat)"
         publisherLabel.text=newHero.publisher
+        storeLocally(newHero)
     }
-    
+    func storeLocally(_ heroData:HeroModel){
+        let heroData=try? PropertyListEncoder().encode(heroData)
+        UserDefaults.standard.set(heroData, forKey: "hero")
+        print("hero saved")
+    }
+    func setFirstHero(){
+        guard let firstHeroData=UserDefaults.standard.data(forKey: "hero"),
+              let heroModel=try? PropertyListDecoder().decode(HeroModel.self,from:firstHeroData)
+                else{
+            print("not find hero model")
+            return}
+        update(heroModel)
+    }
+}
+extension ViewController:UIViewExtension{
+    func updateUI(_ object:UIView) {
+        object.layer.cornerRadius=10
+        object.layer.masksToBounds=true
+        //object.backgroundColor = .
+        
+    }
 }
