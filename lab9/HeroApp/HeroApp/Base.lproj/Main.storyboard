@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="UKq-Fc-fMq">
-                                <rect key="frame" x="0.0" y="234" width="402" height="572"/>
+                                <rect key="frame" x="0.0" y="124" width="402" height="682"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsY-km-BsY">
                                         <rect key="frame" x="0.0" y="0.0" width="402" height="300"/>
@@ -35,7 +35,7 @@
                                             <constraint firstAttribute="bottom" secondItem="u9B-qt-HLI" secondAttribute="bottom" constant="30" id="X1s-5h-H12"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9S-kU-DrL">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9S-kU-DrL">
                                         <rect key="frame" x="0.0" y="303" width="402" height="100"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C32-w0-8xX">
@@ -187,29 +187,29 @@
                                             <constraint firstAttribute="height" constant="100" id="nPm-a7-rSO"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fw3-fR-4f5">
-                                        <rect key="frame" x="0.0" y="418" width="402" height="154"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fw3-fR-4f5">
+                                        <rect key="frame" x="0.0" y="449" width="402" height="150"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="xKM-YK-9gz">
-                                                <rect key="frame" x="10" y="0.0" width="382" height="144"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="xKM-YK-9gz">
+                                                <rect key="frame" x="10" y="-64" width="382" height="204"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgi-IN-DKd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="Ull-0N-Gxo"/>
+                                                            <constraint firstAttribute="height" constant="70" id="Ull-0N-Gxo"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="21"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbi-0S-YLN">
-                                                        <rect key="frame" x="0.0" y="64" width="382" height="80"/>
+                                                        <rect key="frame" x="0.0" y="84" width="382" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="80" id="Xyi-Lh-63C"/>
+                                                            <constraint firstAttribute="height" constant="120" id="Xyi-Lh-63C"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="15"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -222,45 +222,41 @@
                                             <constraint firstItem="xKM-YK-9gz" firstAttribute="leading" secondItem="fw3-fR-4f5" secondAttribute="leading" constant="10" id="H9E-gp-z3C"/>
                                             <constraint firstAttribute="trailing" secondItem="xKM-YK-9gz" secondAttribute="trailing" constant="10" id="HEr-Cd-MgE"/>
                                             <constraint firstAttribute="bottom" secondItem="xKM-YK-9gz" secondAttribute="bottom" constant="10" id="K5t-61-QWk"/>
+                                            <constraint firstAttribute="height" constant="150" id="ts4-dA-pRV"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yS9-IA-obh">
+                                        <rect key="frame" x="0.0" y="602" width="402" height="80"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="MRF-rr-uT6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Roll">
+                                            <fontDescription key="titleFontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="19"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="randomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQO-6U-i8E"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="gsY-km-BsY" firstAttribute="leading" secondItem="UKq-Fc-fMq" secondAttribute="leading" id="7bd-ay-gKz"/>
                                     <constraint firstAttribute="trailing" secondItem="fw3-fR-4f5" secondAttribute="trailing" id="fNR-Ec-TmH"/>
                                     <constraint firstAttribute="trailing" secondItem="gsY-km-BsY" secondAttribute="trailing" id="meT-Y3-E0o"/>
                                     <constraint firstItem="fw3-fR-4f5" firstAttribute="leading" secondItem="UKq-Fc-fMq" secondAttribute="leading" id="sVJ-P1-lUu"/>
-                                    <constraint firstAttribute="bottom" secondItem="fw3-fR-4f5" secondAttribute="bottom" id="xrS-9U-fib"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yS9-IA-obh">
-                                <rect key="frame" x="95" y="124" width="212" height="80"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="MRF-rr-uT6"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Roll">
-                                    <fontDescription key="titleFontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="19"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="randomButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQO-6U-i8E"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="yellow"/>
                         <constraints>
                             <constraint firstItem="UKq-Fc-fMq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8E6-bo-uOp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UKq-Fc-fMq" secondAttribute="trailing" id="Azb-c8-wLD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yS9-IA-obh" secondAttribute="trailing" constant="95" id="DFL-I1-u1E"/>
-                            <constraint firstItem="UKq-Fc-fMq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="999" id="FOD-Yo-sO4"/>
-                            <constraint firstItem="UKq-Fc-fMq" firstAttribute="top" secondItem="yS9-IA-obh" secondAttribute="bottom" constant="30" id="IAE-8U-zoT"/>
                             <constraint firstItem="UKq-Fc-fMq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JhO-0M-Qnf"/>
-                            <constraint firstItem="yS9-IA-obh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="j3r-za-CDi"/>
-                            <constraint firstItem="yS9-IA-obh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pcC-7O-gOv"/>
+                            <constraint firstItem="UKq-Fc-fMq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kSC-oN-VxR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UKq-Fc-fMq" secondAttribute="bottom" id="uX9-kh-1JY"/>
                         </constraints>
                     </view>
