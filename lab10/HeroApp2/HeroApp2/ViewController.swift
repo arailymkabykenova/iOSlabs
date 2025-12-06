@@ -11,7 +11,20 @@ protocol UIViewExtension{
     func updateUI(_ object:UIView)
 }
 class ViewController: UIViewController {
-    
+    let randomColors: [UIColor] = [
+        .systemBlue,
+        .systemTeal,
+        .systemIndigo,
+        .systemPurple,
+        .systemPink,
+        .systemOrange,
+        .systemYellow,
+        .systemGreen,
+        .systemMint,
+        .systemCyan,
+        .systemRed
+    ]
+    @IBOutlet var mainBackView: UIView!
     @IBOutlet weak var heroImage: UIImageView!
     @IBOutlet weak var intellegenceLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
@@ -22,16 +35,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var birthLocationLabel: UILabel!
     @IBOutlet weak var firstAppearanceLabel: UILabel!
     @IBOutlet weak var publisherLabel: UILabel!
-    
-    @IBOutlet weak var lastView: UIView!
+    @IBOutlet var propertyImages: [UIImageView]!
+    @IBOutlet var propertyViews: [UIView]!
+   
     @IBOutlet weak var powerStatsView: UIView!
     @IBOutlet weak var imageViewBorder: UIView!
     
+    @IBOutlet weak var lastView: UIView!
     
     @IBOutlet weak var rollButton: UIButton!
     @IBAction func rollButton(_ sender: UIButton) {
         service.fetchData()
-        
+        propertyUpdate()
     }
 
     var service=HeroNetworkManager()
@@ -48,8 +63,20 @@ class ViewController: UIViewController {
         updateUI(powerStatsView )
         updateUI(lastView )
         updateUI(rollButton)
-        
-        
+        updateUI(mainBackView)
+        updateUI(nameLabel)
+        updateUI(birthLocationLabel)
+        updateUI(firstAppearanceLabel)
+        updateUI(publisherLabel)
+        updateUI(intellegenceLabel)
+        updateUI(speedLabel)
+        updateUI(genderLabel)
+        updateUI(powerLabel)
+        updateUI(combatLabel)
+        for property in propertyViews{
+            updateUI(property)
+        }
+        updateUI(heroImage)
     }
 
 
@@ -58,16 +85,16 @@ class ViewController: UIViewController {
 extension ViewController:HeroNetworkManagerDelegate{
     func update(_ newHero: HeroModel) {
         heroImage.kf.setImage(with: URL(string:newHero.image))
-        nameLabel.text=newHero.name
-        birthLocationLabel.text=newHero.placeOfBirth
-        firstAppearanceLabel.text=newHero.firstAppearance
+        nameLabel.text="Name:\(newHero.name)"
+        birthLocationLabel.text="Born in :\(newHero.placeOfBirth)"
+        firstAppearanceLabel.text="First appear in:\(newHero.firstAppearance)"
         //heroImage.image = UIImage(data: newHero.heroImage)
         intellegenceLabel.text="\(newHero.intelligence)"
         powerLabel.text="\(newHero.power)"
         genderLabel.text="\(newHero.gender)"
         speedLabel.text="\(newHero.speed)"
         combatLabel.text="\(newHero.combat)"
-        publisherLabel.text=newHero.publisher
+        publisherLabel.text="Publisher:\(newHero.publisher)"
         storeLocally(newHero)
     }
     func storeLocally(_ heroData:HeroModel){
@@ -90,5 +117,12 @@ extension ViewController:UIViewExtension{
         object.layer.masksToBounds=true
         //object.backgroundColor = .
         
+    }
+    
+    func propertyUpdate(){
+        for image in propertyImages{
+            image.tintColor=randomColors.randomElement()!
+        }
+
     }
 }
